@@ -35,10 +35,10 @@ app.post('/signIN', validate,async(req,res)=>{
     try{
         await knex("employee").insert(req.body)
         let mailDetails = {
-            from: 'ankur19952709@gmail.com',
+            from: 'sk5105938@gmail.com',
             to: req.body.email,
             subject: 'Test mail',
-            text: 'HI everyone I m  ankur from up'
+            text: 'HI everyone I'm  suraj'
         };
         return res.status(201).send("signup successful")
     }
